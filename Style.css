@@ -1,0 +1,22 @@
+body,
+html {
+    height: 100%;
+}
+
+header {
+    background-image: url("drumfull.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    top: -19px;
+    width: 600px;
+    height: 250px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    z-index: -1;
+    position: absolute;
+}
