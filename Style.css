@@ -1,22 +1,46 @@
-body,
 html {
-    height: 100%;
-}
-
-header {
-    background-image: url("drumfull.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-size: 10px;
+    background: url(drumfull.jpg) bottom center;
     background-size: cover;
 }
 
-.intro {
-    top: -19px;
-    width: 600px;
-    height: 250px;
-    background-color: antiquewhite;
-    border-radius: 5px;
-    z-index: -1;
-    position: absolute;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+kbd {
+    text-align: center;
+    font-size: 4rem;
+    display: block;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: red;
+    box-shadow: 0 0 2rem green;
 }
