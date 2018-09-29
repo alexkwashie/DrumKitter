@@ -26,6 +26,8 @@ window.addEventListener('keydown', function(e) {
 //step8
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing'); // removes the playing class from the div (links with step6)
+    // 'this' is equal to the .key(links to last section of step7)
 
 }
 
