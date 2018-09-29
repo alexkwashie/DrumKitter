@@ -29,7 +29,6 @@ function removeTransition(e) {
 
 }
 
-
 //Create a function to remove 'playing' class
 //step7
 const keys = document.querySelectorAll('.key');
