@@ -6,6 +6,7 @@ window.addEventListener('keydown', function(e) {
 
     //step 5 
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+
     //step2
     if (!audio) {
         return;
@@ -22,5 +23,15 @@ window.addEventListener('keydown', function(e) {
 
 });
 
-//
+//step8
+function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+
+}
+
+
+//Create a function to remove 'playing' class
+//step7
 const keys = document.querySelectorAll('.key');
+//This means, Loop through all seleceted elements and to listen to when transistionEnd occurs, and if that happends will do 'removeClass'.
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
